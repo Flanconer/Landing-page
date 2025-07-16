@@ -1,0 +1,163 @@
+:root {
+  --rosa-intenso: #e91e63;
+  --rosa-pastel: #f8bbd0;
+  --aqua-menta: #80deea;
+  --turquesa: #4dd0e1;
+  --azul-oscuro: #283593;
+  --morado: #8e24aa;
+  --blanco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--blanco);
+  background: var(--azul-oscuro);
+}
+
+header {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background: var(--turquesa);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--rosa-pastel);
+}
+
+.left h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+
+.left p {
+  color: var(--azul-oscuro);
+  max-width: 400px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.left a {
+  background: var(--rosa-intenso);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.left a:hover {
+  background: var(--morado);
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-section {
+  margin-top: 3rem;
+}
+
+.social-section h2 {
+  color: var(--azul-oscuro);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.icon.facebook {
+  background: linear-gradient(135deg, #3b5998, #8b9dc3);
+}
+
+.icon.instagram {
+  background: linear-gradient(135deg, #e1306c, #f77737);
+}
+
+.icon.x {
+  background: linear-gradient(135deg, #000000, #444444);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+footer {
+  background: var(--morado);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  .left, .right {
+    width: 100%;
+    padding: 2rem;
+  }
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-icons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
