@@ -1,0 +1,91 @@
+:root {
+  --rosa-intenso: #e91e63;
+  --rosa-pastel: #f8bbd0;
+  --aqua-menta: #80deea;
+  --turquesa: #4dd0e1;
+  --azul-oscuro: #283593;
+  --morado: #8e24aa;
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--blanco);
+  color: var(--azul-oscuro);
+}
+
+.navbar {
+  background-color: var(--turquesa);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  background-color: var(--rosa-intenso);
+  color: var(--blanco);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: var(--morado);
+}
+
+.hero {
+  background: url('img/nosotros-hero.jpg') no-repeat center center/cover;
+  height: 50vh;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(233, 30, 99, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: var(--blanco);
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px var(--azul-oscuro);
+}
+
+.contenido {
+  padding: 50px 15%;
+}
+
+.bloque {
+  margin-bottom: 40px;
+}
+
+.bloque h2 {
+  color: var(--morado);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--rosa-intenso);
+  padding-left: 10px;
+}
+
+.bloque p, .bloque ul {
+  font-size: 1.1rem;
+  color: var(--azul-oscuro);
+  line-height: 1.6;
+}
+
+.bloque ul {
+  padding-left: 20px;
+}
