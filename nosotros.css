@@ -45,7 +45,7 @@ body {
 }
 
 .hero {
-  background: url('img/nosotros-hero.jpg') no-repeat center center/cover;
+  background: url('imagenes/WhatsApp\ Image\ 2025-07-13\ at\ 9.57.22\ PM.jpeg') no-repeat center center/cover;
   height: 50vh;
   position: relative;
 }
@@ -80,7 +80,8 @@ body {
   padding-left: 10px;
 }
 
-.bloque p, .bloque ul {
+.bloque p,
+.bloque ul {
   font-size: 1.1rem;
   color: var(--azul-oscuro);
   line-height: 1.6;
@@ -88,4 +89,34 @@ body {
 
 .bloque ul {
   padding-left: 20px;
+}
+
+/* Diseño intercalado */
+.intercalado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.intercalado.izquierda {
+  flex-direction: row;
+}
+
+.intercalado.derecha {
+  flex-direction: row-reverse;
+}
+
+.intercalado .imagen {
+  flex: 1 1 40%;
+}
+
+.intercalado .imagen img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intercalado .texto {
+  flex: 1 1 55%;
 }

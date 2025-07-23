@@ -1,0 +1,122 @@
+:root {
+  --rosa-intenso: #e91e63;
+  --rosa-pastel: #f8bbd0;
+  --aqua-menta: #80deea;
+  --turquesa: #4dd0e1;
+  --azul-oscuro: #283593;
+  --morado: #8e24aa;
+  --blanco: #ffffff;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--turquesa);
+  color: var(--azul-oscuro);
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 50px auto;
+    
+}
+
+.contact-info {
+    background-color: #0B3E4C;
+    color: #fff;
+    padding: 40px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.info-item p {
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 57px;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background: none;
+}
+
+.contact-form button {
+    background: none;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.navbar {
+  background-color: var(--azul-oscuro);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  background-color: var(--rosa-intenso);
+  color: var(--blanco);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: var(--morado);
+}
