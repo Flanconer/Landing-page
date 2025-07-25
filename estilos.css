@@ -31,7 +31,14 @@ body {
     margin: 50px auto;
     
 }
-
+/* 🦶 Footer */
+footer {
+  background: var(--morado);
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
 .contact-info {
     background-color: #0B3E4C;
     color: #fff;

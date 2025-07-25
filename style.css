@@ -20,7 +20,14 @@ body {
   padding: 10px 0;
   text-align: center;
 }
-
+/* 🦶 Footer */
+footer {
+  background: var(--morado);
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
 .menu {
   list-style: none;
   display: flex;
