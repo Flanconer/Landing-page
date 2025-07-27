@@ -67,11 +67,37 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+.top-left {
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--turquesa);
+  padding: 0.2rem 2rem;
+  z-index: 1000;
+  flex-wrap: nowrap;
+}
+
+/* 🎯 Logo */
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
 .menu {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 50px;
   padding: 0;
   margin: 0;
 }
@@ -79,7 +105,7 @@ footer {
 .menu li a {
   background-color: var(--rosa-intenso);
   color: var(--blanco);
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-decoration: none;
   border-radius: 25px;
   font-weight: bold;
